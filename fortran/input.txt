@@ -1,0 +1,21 @@
+program fibonacci
+integer::a, b, c
+a = 1
+b = 1
+print a
+print b
+do label i = 1,10
+c = a + b
+print c
+a = b
+b = c
+end do
+if (a > b .AND. a < c) then
+a = b + c
+else
+a = b - c
+endif
+do
+a = a + 1
+while (a < b .OR. a < c)
+end program fibonacci

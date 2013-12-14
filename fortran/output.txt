@@ -1,0 +1,55 @@
+let name0 1
+mov name0 a
+let name1 1
+mov name1 b
+out a
+out b
+let i 1
+let name2 1
+let name3 10
+let name4 0
+cmp i name3 11 11 20
+let name5 0
+add a b name5
+mov name5 c
+out c
+mov b a
+mov c b
+add i name2 name4
+mov name4 i
+jmp 10
+let name6 0
+cmp a b 23 23 22
+let name6 1
+let name7 0
+cmp a c 25 26 26
+let name7 1
+let name8 0
+mul name6 name7 name8
+let name11 0
+cmp name8 name11 34 30 34
+let name9 0
+add b c name9
+mov name9 a
+jmp 37
+let name10 0
+sub b c name10
+mov name10 a
+let name12 1
+let name13 0
+add a name12 name13
+mov name13 a
+let name14 0
+cmp a b 43 44 44
+let name14 1
+let name15 0
+cmp a c 46 47 47
+let name15 1
+let name16 0
+let name17 0
+let name18 0
+add name14 name15 name17
+mul name14 name15 name18
+sub name17 name18 name16
+let name19 0
+cmp name16 name19 55 37 55
