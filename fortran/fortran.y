@@ -1,6 +1,4 @@
-%{
-#include "fortran.h"
-%}
+%code requires { #include "fortran.h" }
 
 %union {
 	Expr *expr;
