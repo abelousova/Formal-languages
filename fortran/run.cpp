@@ -204,7 +204,7 @@ void StmtIf::run(bool writeToVector, ostream& out, vector<string>* output)
 	string endifLineStr = to_string(static_cast<long long>(endifLine));
 
 	string zero = tempVarName(0, writeToVector, out, output);
-	printCmp(v, zero, EQ, thenLine, elseLine, writeToVector, out, output);
+	printCmp(v, zero, NE, thenLine, elseLine, writeToVector, out, output);
 	for (int i = 0; i < thenVector.size(); i++) {
 		if (writeToVector) {
 			output->push_back(thenVector[i]);
@@ -398,7 +398,7 @@ void StmtCycleWhile::run(bool writeToVector, ostream& out, vector<string>* outpu
 	}
 
 	string zero = tempVarName(0, writeToVector, out, output);
-	printCmp(conditionRes, zero, EQ, cycleBeginLine, exitLine, writeToVector, out, output);
+	printCmp(conditionRes, zero, NE, cycleBeginLine, exitLine, writeToVector, out, output);
 }
 
 string tempVarName(int value, bool writeToVector, ostream& out, vector<string> *output) {
